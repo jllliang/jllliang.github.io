@@ -1,0 +1,204 @@
+/* =========================================
+   Base Typography
+========================================= */
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f8fbff;
+    color: #1f2937;
+}
+
+h1, h2, h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+li {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   Navbar
+========================================= */
+
+.navbar {
+    background: white;
+    border-bottom: 2px solid #e6eefc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* 保持右侧导航 */
+    align-items: center;
+}
+
+.nav-name {
+    font-weight: 600;
+    color: #1e3a8a;
+    font-size: 18px;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   Layout
+========================================= */
+
+.layout {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    border-bottom: 2px solid #e0ecff;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+
+/* =========================================
+   Sidebar
+========================================= */
+
+.sidebar {
+    width: 220px;
+    padding-right: 30px;
+}
+
+.profile-img {
+    width: 185px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .info p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 4px 0;
+}
+
+.contact {
+    margin-top: 16px;   /* 稍微留点呼吸感 */
+}
+
+.contact p {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 14px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   Links (Main Content)
+========================================= */
+
+.content a {
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   Publications
+========================================= */
+
+.pub-item {
+    margin-bottom: 28px;
+}
+
+.pub-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.pub-authors {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.pub-venue {
+    font-size: 14px;
+    font-style: italic;
+    color: #1e3a8a;
+    margin-bottom: 6px;
+}
+
+
+/* =========================================
+   Footer
+========================================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
